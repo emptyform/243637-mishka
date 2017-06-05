@@ -1,0 +1,28 @@
+.map {
+  position: relative;
+}
+.map::before {
+  position: absolute;
+  content: "";
+  top: 166px;
+  left: 123px;
+  width: 67px;
+  height: 100px;
+  background-image: url("../img/icon-map-pin.svg");
+}
+@media (min-width: 768px) {
+  .map::before {
+    left: 347px;
+  }
+  .map img {
+    width: 768px;
+  }
+}
+@media (min-width: 1150px) {
+  .map::before {
+    left: 236px;
+  }
+  .map img {
+    width: 525px;
+  }
+}

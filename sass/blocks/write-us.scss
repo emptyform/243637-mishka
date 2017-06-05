@@ -1,0 +1,39 @@
+.write-us {
+  padding: 0 30px;
+}
+.write-us__input {
+  box-sizing: border-box;
+  width: 260px;
+  display: inline-block;
+  padding: 18px 45px;
+  color: #444444;
+  background-color: #ffffff;
+  border: 2px solid #444444;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+@media (min-width: 768px) {
+  .write-us {
+    margin: 0 auto;
+  }
+  .write-us {
+    padding: 0;
+  }
+  .write-us__input {
+    width: 230px;
+  }
+}
+@media (min-width: 1150px) {
+  .write-us__input {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-left: 175px;
+  }
+}

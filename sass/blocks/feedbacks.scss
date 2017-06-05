@@ -1,0 +1,105 @@
+.feedbacks {
+  font-size: 25px;
+  padding: 0 30px;
+}
+.feedbacks__item {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 30px;
+  margin: 0;
+}
+.feedbacks__name {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+}
+.feedbacks__id {
+  display: block;
+  font-size: 17px;
+  margin-bottom: 35px;
+}
+.feedbacks__input {
+  box-sizing: border-box;
+  width: 260px;
+  display: inline-block;
+  padding: 18px 43px;
+  color: #444444;
+  background-color: #ffffff;
+  border: 2px solid #444444;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .feedbacks {
+    position: relative;
+    width: 668px;
+    margin: 0 50px;
+    padding: 0;
+  }
+  .feedbacks::before {
+    content: "";
+    position: absolute;
+    top: -60px;
+    left: -50px;
+    z-index: -10;
+    width: 350px;
+    height: 458px;
+    background-size: 350px auto;
+    background-image: url("../img/review@1x.jpg");
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/review@2x.jpg");
+    }
+  }
+  .feedbacks__item {
+    font-size: 17px;
+  }
+  .feedbacks__item  p {
+    margin-bottom: 30px;
+  }
+  .feedbacks__headline {
+    font-size: 43px;
+  }
+  .feedbacks__id {
+    margin-bottom: 0;
+  }
+  .feedbacks__input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 175px;
+    padding: 18px 40px;
+  }
+}
+@media (min-width: 1150px) {
+  .feedbacks {
+    position: relative;
+    width: 875px;
+    padding-left: 175px;
+    padding-right: 0;
+  }
+  .feedbacks::before {
+    content: "";
+    position: absolute;
+    top: -60px;
+    left: 0;
+    z-index: -10;
+    width: 350px;
+    height: 458px;
+    background-image: url("../img/review@1x.jpg");
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/review@2x.jpg");
+    }
+  }
+  .feedbacks__item {
+    width: 770px;
+  }
+  .feedbacks__headline {
+    font-size: 53px;
+  }
+
+}

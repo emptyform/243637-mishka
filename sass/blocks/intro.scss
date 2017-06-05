@@ -1,0 +1,76 @@
+.intro {
+  width: 320px;
+  background: url("../img/hero-mobile@1x.jpg")  50% 20% no-repeat;
+  background-size: 536px auto;
+  @media (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    background: url("../img/hero-mobile@2x.jpg") 50% 20% no-repeat;
+    background-size: 536px auto;
+  }
+}
+.intro__slogan {
+  width: 260px;
+  font-size: 27px;
+  line-height: 30px;
+  margin: 0 auto;
+  padding: 70px 0px;
+  padding-bottom: 102px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .intro {
+    position: relative;
+    width: 768px;
+    margin: auto;
+    border-top: 1px solid #e7e7e7;
+    background: url("../img/hero-mobile@1x.jpg")  50% -4% repeat;
+    background-size: 768px auto;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url("../img/hero-mobile@2x.jpg") 50% -4% repeat;
+      background-size: 768px auto;
+    }
+  }
+  .intro::after {
+    content: "";
+    z-index: 10;
+    bottom: -20px;
+    left: -35px;
+    height: 36px;
+    width: 800px;
+    display: block;
+    position: absolute;
+    background-image: url("../img/bg-zigzag-fill.svg");
+  }
+  .intro__slogan {
+    width: 668px;
+    padding-bottom: 372px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+
+  }
+}
+@media (min-width: 1150px) {
+  .intro {
+    width: 1150px;
+    background: url("../img/hero-desktop@1x.jpg")  50% 20% no-repeat;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background: url("../img/hero-desktop@2x.jpg")  50% 20% no-repeat;
+        background-size: 1150px auto;
+
+    }
+  }
+  .intro::after {
+    left: -50px;
+    height: 36px;
+    width: 1200px;
+  }
+  .intro__slogan {
+    font-size: 53px;
+    line-height: 57px;
+    padding-bottom: 504px;
+    padding-top: 130px;
+  }
+}

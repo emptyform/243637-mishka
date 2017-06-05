@@ -1,0 +1,25 @@
+.params {
+  margin-bottom: 28px;
+  width: 260px;
+}
+.params__item {
+  text-align: left;
+  width: 86px;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 12px 0px;
+  border-bottom: 1px solid #ececec;
+}
+.params__value {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 12px 0px;
+  border-bottom: 1px solid #ececec;
+}
+@media (min-width: 1150px) {
+  .params {
+      width: 292px;
+  }
+}
