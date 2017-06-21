@@ -12,16 +12,15 @@
   padding-left: 17px;
   border: none;
   font-size: 17px;
-  color: #d2d2d2;
   width: 260px;
   border-bottom:  2px solid black;
   padding: 20px 0px;
   &--border {
     border:  2px solid black;
   }
-}
-.customer-id__item:hover {
-  border-bottom:  2px solid #62d1ba;
+  &:hover {
+    border-bottom:  2px solid #62d1ba;
+  }
 }
 .customer-id__item--border:hover {
   border:  2px solid #62d1ba;

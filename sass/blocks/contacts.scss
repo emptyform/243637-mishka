@@ -20,6 +20,18 @@
   margin: 0;
   margin-bottom: 40px;
 }
+.contacts__value--mail {
+    text-decoration: none;
+    border-bottom: 1px solid #63d1bb;
+    color: inherit;
+    &:hover {
+      color: #63d1bb;
+    }
+    &:active {
+      color: #dff2ef;
+      border-color: #dff2ef;
+    }
+  }
 @media (min-width: 768px) {
   .contacts {
     position: relative;
@@ -63,6 +75,11 @@
   .contacts__items {
     padding: 0 50px;
   }
+  .contacts__value--mail {
+    height: 30px;
+    width: 182px;
+    margin-right: 62px;
+  }
 }
 @media (min-width: 1150px) {
   .contacts {
@@ -101,5 +118,9 @@
     padding-left: 175px;
     margin: 0;
     font-size: 53px;
+  }
+  .contacts__value--mail {
+    width: 205px;
+    height: auto;
   }
 }
