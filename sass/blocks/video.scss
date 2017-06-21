@@ -108,6 +108,9 @@
     height: 78px;
     background-image: url("../img/icon-play.svg");
   }
+  .video__player::before:hover {
+    size: 120%;
+  }
   .video__headline {
     padding-bottom: 0;
     padding-left: 60px;
@@ -125,6 +128,14 @@
     width: 584px;
     margin: 0 auto;
     margin-bottom: 46px;
+    &:hover {
+      background-color: #444444;
+      color: #ffffff;
+    }
+    &:active {
+      background-color: #444444;
+      color: #858585;
+    }
   }
   .video__headline::after {
     top: 0;

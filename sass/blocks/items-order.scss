@@ -26,14 +26,14 @@
   line-height: 16px;
   text-decoration: none;
   text-transform: uppercase;
-}
-.item-order__input:hover {
-  background-color: #444444;
-  color: #ffffff;
-}
-.item-order__input:active {
-  background-color: #444444;
-  color: #858585;
+  &:hover {
+    background-color: #444444;
+    color: #ffffff;
+  }
+  &:active {
+    background-color: #444444;
+    color: #858585;
+  }
 }
 @media (min-width: 768px) {
   .item-order {

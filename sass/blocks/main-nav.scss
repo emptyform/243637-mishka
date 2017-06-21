@@ -128,7 +128,7 @@
   top: 30px;
   left: 32px;
   width: 18px;
-  height: 18px;
+  height: 17px;
   background-image: url("../img/icon-search.svg");
 }
 @media (max-width: 767px) {
@@ -209,6 +209,15 @@
     text-decoration: none;
     background-color: #ffffff;
     border-top: 0;
+    
+  }
+  .main-nav__item a:hover,
+  .main-nav__user-item a:hover {
+    color: #8d8d8d;
+  }
+  .main-nav__item a:active,
+  .main-nav__user-item a:active {
+    color: #cacaca;
   }
   .main-nav__user-item a {
     padding: 33px 0;

@@ -45,13 +45,11 @@
       <h1 class="catalog__headline">Каталог товаров</h1>
       <section class="catalog__list">
         <div class="catalog-item">
-          <a href="#">
-            <picture>
+           <picture>
               <source media="(min-width: 1150px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
               <img  class="catalog-item__img" src="img/photo-1-mobile@1x.jpg" alt="" width="260" height="195">
             </picture>
-          </a>
           <div class="catalog-item__desc">
             <a href="#">
               <h3 class="catalog-item__headline">Зайчик попрыгайчик</h3>
@@ -61,13 +59,11 @@
           </div>
         </div>
         <div class="catalog-item">
-          <a href="#">
             <picture>
                 <source media="(min-width: 1150px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
                 <img class="catalog-item__img" src="img/photo-2-mobile@1x.jpg" alt="" width="260" height="195">
             </picture>
-          </a>
           <div class="catalog-item__desc">
             <a href="#">
               <h3 class="catalog-item__headline">Корзинка для белья</h3>
@@ -77,13 +73,11 @@
           </div>
         </div>
         <div class="catalog-item">
-          <a href="#">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
               <img class="catalog-item__img" src="img/photo-3-mobile@1x.jpg" alt="" width="260" height="195">
             </picture>
-          </a>
           <div class="catalog-item__desc">
             <a href="#">
               <h3 class="catalog-item__headline">Большая корзинка<br> для игрушек</h3>
@@ -137,6 +131,7 @@
         <button class="modal-content__button" type="button" name="button">Добавить</button>
       </div>
     </div>
+    <script src="http://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js"></script>
     <script>
       var navMain = document.querySelector('.main-nav');
       var navToggle = document.querySelector('.main-nav__toggle');
@@ -150,16 +145,14 @@
           navMain.classList.remove('main-nav--opened');
         }
       });
-    </script>
-    <script>
-      var overlay = document.querySelector(".overlay");
+       var overlay = document.querySelector(".overlay");
       var modal = document.querySelector(".modal-content");
       var btn = document.querySelector(".catalog-item__cart");
-      btn.addEventListener("click", function(event) {
+      btn.onclick =  function(event) {
         event.preventDefault();
         overlay.classList.add("modal-content--show")
         modal.classList.add("modal-content--show");
-      });
+      };
       overlay.addEventListener("click", function(event) {
         overlay.classList.remove("modal-content--show");
       });

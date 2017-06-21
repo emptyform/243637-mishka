@@ -17,6 +17,14 @@
   text-transform: uppercase;
   margin: 0 auto;
   margin-top: 40px;
+  &:hover {
+    background-color: #444444;
+    color: #ffffff;
+  }
+  &:active {
+    background-color: #444444;
+    color: #858585;
+  }
 }
 @media (min-width: 768px) {
   .write-us {
