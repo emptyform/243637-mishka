@@ -24,10 +24,10 @@
   right: 37px;
   fill: #35a999;
   &:hover {
-    fill: #239f8e;      
+    fill: #239f8e;    
   }
   &:active {
-    fill: #37b2a0;      
+    fill: #37b2a0;
   }
 }
 .items-block__toys {
@@ -41,7 +41,7 @@
   }
   &:active {
     color: #8dd5c9;
-  } 
+  }
 }
 .items-block__toys-icon {
   position: absolute;
@@ -49,21 +49,12 @@
   right: 30px;
   fill: #35a999;
   &:hover {
-    fill: #239f8e;      
+    fill: #239f8e;
   }
   &:active {
-    fill: #37b2a0;      
+    fill: #37b2a0;
   }
 }
-/*.items-block__toys::after {
-  position: absolute;
-  top: 26px;
-  right: 30px;
-  content: "";
-  width: 60px;
-  height: 60px;
-  background-image: url("../img/icon-toy.svg");
-  }*/
 @media (min-width: 768px) {
   .items-block {
     position: absolute;
