@@ -14,7 +14,7 @@
   font-size: 17px;
   width: 260px;
   border-bottom:  2px solid black;
-  padding: 20px 0px;
+  padding: 15px 0px;
   &--border {
     border:  2px solid black;
   }
@@ -42,7 +42,7 @@
   content: "";
   position: absolute;
   bottom: 43px;
-  right: 3px;
+  right: 6px;
   width: 32px;
   height: 26px;
   z-index: 200;
@@ -50,13 +50,13 @@
 }
 .customer-id__label {
   display: inline-block;
+  vertical-align: middle;
   font-size: 17px;
   line-height: 18px;
   padding: 20px 0px;
   padding-right: 20px;
 }
 .customer-id__headline {
-  display: inline-block;
   width: 260px;
   margin-right: 23px;
   font-size: 17px;
@@ -122,6 +122,8 @@
   }
   .customer-id__label {
     font-size: 19px;
+    padding: 0px;
+    padding-top: 22px;
     padding-right: 0;
   }
   .customer-id__contacts {
@@ -153,6 +155,7 @@
   }
   .customer-id__headline--add-margin {
     margin-right: 119px;
+    margin-top: 18px;
   }
   .customer-id__add .customer-id__item {
     width: 501px;
@@ -164,7 +167,7 @@
     top: 35px;
   }
   .customer-id__contacts::after {
-    bottom: 41px;
+    bottom: 16px;
     box-sizing: border-box;
     padding-left: 17px;
     margin-left: 0;
@@ -173,6 +176,8 @@
 @media (min-width: 1150px) {
   .customer-id {
     padding: 50px;
+    padding-top: 26px;
+    padding-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -180,7 +185,8 @@
   .customer-id__headline {
     margin-right: 71px;
     padding-left: 61px;
-    margin-top: 40px;
+    display: inline-block;
+    vertical-align: middle;
   }
   .customer-id__name {
     display: flex;
@@ -197,9 +203,11 @@
     flex-direction: column;
   }
   .customer-id__item {
+    font-size: 19px;
     box-sizing: border-box;
     width: 574px;
     padding-left: 17px;
+    outline: 0;
   }
   .customer-id__item--width {
     width: 626px;
@@ -209,9 +217,11 @@
   }
   .customer-id__headline--email-margin {
     margin-right: 54px;
+    margin-top: 8px;
   }
   .customer-id__headline--tel-margin {
     margin-right: 77px;
+    margin-top: 4px;
   }
   .customer-id__contacts .customer-id__item {
     width: 700px;

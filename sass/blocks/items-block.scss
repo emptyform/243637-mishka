@@ -21,7 +21,7 @@
 .items-block__interier-icon {
   position: absolute;
   top: 26px;
-  right: 37px;
+  right: 36px;
   fill: #35a999;
   &:hover {
     fill: #239f8e;
@@ -69,18 +69,21 @@
   }
   .items-block__interier {
     flex-grow: 1;
+    padding: 30px 8px 34px 37px;
+    line-height: 27px;
   }
   .items-block__toys {
     flex-grow: 1;
+    padding: 29px 27px 34px 37px;
   }
   .items-block__toys-icon {
-    right: 37px;
+    right: 35px;
     }
 }
 @media (min-width: 1150px) {
   .items-block {
     left: 50px;
-    top: 632px;
+    top: 625px;
     width: 1050px;
     flex-direction: row;
   }
@@ -88,9 +91,9 @@
     font-size: 20px;
   }
   .items-block__interier-icon{
-    top: 28px;
+    top: 31px;
   }
   .items-block__toys-icon {
-    top: 28px;
+    top: 31px;
   }
 }

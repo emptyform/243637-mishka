@@ -21,15 +21,15 @@
 .feedbacks__input {
   box-sizing: border-box;
   width: 260px;
-  display: inline-block;
   padding: 18px 43px;
   color: #444444;
   background-color: #ffffff;
   border: 2px solid #444444;
   cursor: pointer;
+  outline: 0;
   font-size: 17px;
   font-weight: 700;
-  line-height: 16px;
+  line-height: 12px;
   text-decoration: none;
   text-transform: uppercase;
   &:hover {
@@ -66,18 +66,19 @@
   .feedbacks__item {
     font-size: 17px;
   }
-  .feedbacks__item  p {
-    margin-bottom: 30px;
+  .feedbacks__item-legend {
+    margin-bottom: 38px;
   }
   .feedbacks__headline {
     font-size: 43px;
+    margin-bottom: 37px;
   }
   .feedbacks__id {
     margin-bottom: 0;
   }
   .feedbacks__input {
     position: absolute;
-    top: 0;
+    top: 19px;
     right: 0;
     width: 175px;
     padding: 18px 40px;
