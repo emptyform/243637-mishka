@@ -91,12 +91,12 @@
     width: 1050px;
     font-size: 17px;
     margin-top: 71px;
-    margin-bottom: 160px;
+    margin-bottom: 140px;
     justify-content: flex-end;
   }
   .week-item::after {
     left: 0px;
-    bottom: -100px;
+    bottom: -90px;
     display: block;
     width: 1150px;
   }
@@ -113,8 +113,8 @@
     justify-content: space-between;
   }
   .week-item__headline {
-    top: 60px;
-    left: -5px;
+    top: 66px;
+    left: 5px;
     width: 527px;
     position: absolute;
     font-size: 53px;
@@ -122,12 +122,14 @@
   }
   .week-item__title {
     position: absolute;
-    top: 63px;
-    left: -127px;
+    top: 65px;
+    left: -119px;
     width: 73px;
     text-align: center;
   }
   .week-item__legend {
-    margin-top: 140px;
+    margin-top: 158px;
+    margin-left: 10px;
+    line-height: 30px;
   }
 }

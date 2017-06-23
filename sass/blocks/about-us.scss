@@ -32,8 +32,8 @@
 }
 .about-us__feature-3::before {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -4px;
+  left: 1px;
   content: "";
   width: 47px;
   height: 27px;
@@ -77,14 +77,19 @@
   .about-us {
     position: relative;
     display: flex;
-    justify-content: space-between;
     width: 668px;
     margin: 0 auto;
     padding: 0;
-    margin-bottom: 100px;
+    margin-bottom: 86px;
   }
   .about-us__item {
     padding-top: 100px;
+  }
+  .about-us__item:first-of-type {
+    margin-right: 108px;
+  }
+  .about-us__item:last-of-type {
+    padding-left: 10px;
   }
   .about-us__lead {
     position: relative;
@@ -94,7 +99,7 @@
   }
   .about-us__feature-1::before {
     position: absolute;
-    top: 0;
+    top: -4px;
     left: 9px;
     content: "";
     width: 33px;
@@ -103,8 +108,8 @@
   }
   .about-us__feature-2::before {
     position: absolute;
-    top: 0;
-    left: 3px;
+    top: -1px;
+    left: 2px;
     content: "";
     width: 35px;
     height: 34px;
@@ -112,8 +117,8 @@
   }
   .about-us__feature-3::before {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -4px;
+    left: 1px;
     content: "";
     width: 47px;
     height: 27px;
@@ -121,7 +126,7 @@
   }
   .about-us__feature-4::before {
     position: absolute;
-    top: 0;
+    top: -1px;
     left: -6px;
     content: "";
     width: 55px;
@@ -141,8 +146,8 @@
   }
   .about-us__feature-6::before {
     position: absolute;
-    top: 0;
-    left: 3px;
+    top: -4px;
+    left: 2px;
     content: "";
     width: 33px;
     height: 32px;
@@ -160,13 +165,15 @@
   .about-us {
     width: 700px;
   }
+  
   .about-us__headline {
     font-size: 53px;
   }
   .about-us__lead {
     position: relative;
     font-size: 20px;
-    padding-top: 56px;
-    margin-bottom: 55px;
+    line-height: 23px;
+    padding-top: 48px;
+    margin-bottom: 62px;
   }
 }

@@ -11,14 +11,14 @@
   padding: 0 30px;
 }
 .contacts__type {
-  padding-right: 32px;
+  padding-right: 25px;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .contacts__value {
   width: 180px;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 19px;
 }
 .contacts__value--mail {
     text-decoration: none;
@@ -90,11 +90,11 @@
   }
   .contacts::before {
     left: -50px;
-    top: -100px;
+    top: -90px;
     width: 1150px;
   }
   .contacts::after {
-    top: 0;
+    top: 65px;
     left: 63px;
   }
   .contacts__type {
@@ -107,15 +107,16 @@
     align-self: center;
     padding: 0;
     padding-left: 175px;
+    padding-top: 60px;
     width: 320px;
     font-size: 17px;
     padding-right: 30px;
   }
   .contacts__headline {
     position: absolute;
-    top: 0;
+    top: 62px;
     padding: 0;
-    padding-left: 175px;
+    padding-left: 170px;
     margin: 0;
     font-size: 53px;
   }

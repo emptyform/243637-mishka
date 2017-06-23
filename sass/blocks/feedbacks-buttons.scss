@@ -8,11 +8,19 @@
   height: 52px;
   padding:0;
   border: 1px solid #ececec;
-  background-image: url(../img/icon-left-arrow.svg);
-  background-position: 50%;
-  background-repeat: no-repeat;
   background-color: transparent;
   cursor: pointer;
+  outline: 0;
+  &:hover {
+    fill: #666666;
+  }
+  &:active {
+    fill: #b2b2b2;
+  }
+}
+.feedbacks-buttons__prev-icon,
+.feedbacks-buttons__next-icon {
+  width: 50px;
 }
 .feedbacks-buttons__next {
   box-sizing: border-box;
@@ -20,17 +28,21 @@
   height: 52px;
   padding:0;
   border: 1px solid #ececec;
-  background-image: url(../img/icon-right-arrow.svg);
-  background-position: 50%;
-  background-repeat: no-repeat;
   background-color: transparent;
   cursor: pointer;
+  outline: 0;
+  &:hover {
+    fill: #666666;
+  }
+  &:active {
+    fill: #b2b2b2;
+  }
 }
 
 @media (min-width: 768px) {
   .feedbacks-buttons {
     position: absolute;
-    bottom: 0;
+    bottom: 19px;
     right: 0;
     margin-bottom: 0;
   }
@@ -45,5 +57,9 @@
     height: 26px;
     border: none;
     margin: 0 19px;
+  }
+  .feedbacks-buttons__prev-icon,
+  .feedbacks-buttons__next-icon {
+    width: 100%;
   }
 }

@@ -90,8 +90,8 @@
   font-weight: bold;
 }
 
-.main-nav__item a,
-.main-nav__user-item a {
+.main-nav__item--link,
+.main-nav__user-item--link {
   display: block;
   box-sizing: border-box;
   width: 320px;
@@ -192,14 +192,11 @@
     display: none;
   }
   .main-nav__items {
-    /*min-height: 255px;*/
     font-weight: bold;
-
   }
 
-  .main-nav__item a,
-  .main-nav__user-item a{
-    display: inline-block;
+  .main-nav__item--link,
+  .main-nav__user-item--link {
     box-sizing: border-box;
     width: 320px;
     padding: 18px 0;
@@ -210,15 +207,18 @@
     background-color: #ffffff;
     border-top: 0;
   }
-  .main-nav__item a:hover,
-  .main-nav__user-item a:hover {
+  .main-nav__user-item--link {
+    line-height: 21px;
+  }
+  .main-nav__item--link:hover,
+  .main-nav__user-item--link:hover {
     color: #8d8d8d;
   }
-  .main-nav__item a:active,
-  .main-nav__user-item a:active {
+  .main-nav__item--link:active,
+  .main-nav__user-item--link:active {
     color: #cacaca;
   }
-  .main-nav__user-item a {
+  .main-nav__user-item--link {
     padding: 33px 0;
   }
   .main-nav__cart {
@@ -241,11 +241,11 @@
   .main-nav__items:last-child {
     order: -1;
   }
-  .main-nav__item a {
+  .main-nav__item--link {
     font-size: 15px;
     width: 167px;
   }
-  .main-nav span {
+  .main-nav__delivery {
     display: inline-block;
     position: absolute;
     top: 105px;
@@ -286,31 +286,35 @@
   .main-nav__first-level {
     bottom: 0;
   }
-  .main-nav__first-level a {
+  .main-nav__item:first-of-type .main-nav__item--link {
+    border-right: 1px solid #ececec;
+  }
+  .main-nav__first-level .main-nav__item--link {
     font-size: 17px;
     width: 191px;
     padding-right: 35px;
   }
   .main-nav__first-level .main-nav__item {
-    margin-right: 35px;
+    margin-right: 29px;
   }
   .main-nav__second-level {
-    margin-left: 715px;
+    margin-left: 698px;
   }
   .main-nav__third-level {
     position: absolute;
     top: 90px;
     z-index: 10;
     display: inline-block;
+    vertical-align: top;
   }
   .main-nav__third-level .main-nav__user-item {
     width: 175px;
     margin-right: 45px;
   }
-  .main-nav__item a {
+  .main-nav__item--link {
     padding: 33px 0;
   }
-  .main-nav__user-item a {
+  .main-nav__user-item--link {
     background-color: transparent;
     font-size: 15px;
     padding: 18px 0;
@@ -319,11 +323,11 @@
   .main-nav__user-item .main-nav__cart {
     width: 268px;
     padding: 33px 0;
-    padding-left: 86px;
+    padding-left: 83px;
     margin: 0;
+    font-size: 17px;
   }
-  .main-nav span {
-    display: inline-block;
-    top: 110px;
+  .main-nav__delivery {
+    top: 107px;
   }
 }

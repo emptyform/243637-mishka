@@ -78,19 +78,19 @@
 .order-form__checkbox-label input[type="checkbox"]:checked + .order-form__checkbox-indicator::after {
   content: "";
   position: absolute;
-  top: 18px;
-  left: 15px;
+  top: 21px;
+  left: 12px;
 
-  width: 16px;
+  width: 29px;
   height: 3px;
 
   background-color: #000000;
 }
 .order-form__checkbox-label input[type="checkbox"]:checked + .order-form__checkbox-indicator::before {
   transform: rotate(40deg);
-  top: 21px;
-  left: 11px;
-  width: 8px;
+  top: 25px;
+  left: 3px;
+  width: 16px;
 }
 
 .order-form__checkbox-label input[type="checkbox"]:checked + .order-form__checkbox-indicator::after {
@@ -111,6 +111,7 @@
 @media (min-width: 768px) {
   .order-form {
     margin: 0;
+    margin-bottom: -49px;
   }
   .order-form__radio {
     display: flex;
@@ -136,6 +137,14 @@
     margin-right: 115px;
     margin-top: 20px;
     text-transform: uppercase;
+  }
+  .order-form__item:first-of-type .order-form__item-headline {
+    margin-right: 74px;
+  }
+  .order-form__item:nth-of-type(2) .order-form__item-headline {
+    margin-top: 18px;
+    padding-left: 60px;
+    margin-right: 63px;
   }
   .order-form__item-headline::after {
     display: none;
@@ -169,8 +178,8 @@
     padding-left: 82px;
   }
   .order-form__checkbox-label input[type="checkbox"] + .order-form__checkbox-indicator {
-    width: 54px;
-    height: 52px;
+    width: 50px;
+    height: 48px;
   }
   .order-form__checkbox-label input[type="checkbox"]:checked + .order-form__checkbox-indicator::before{
     top: 15px;
@@ -178,26 +187,26 @@
   }
   .order-form__checkbox-label input[type="checkbox"]:checked + .order-form__checkbox-indicator::before,
   .order-form__checkbox-label input[type="checkbox"]:checked + .order-form__checkbox-indicator::after {
-    top: 26px;
-    left: 20px;
+    top: 24px;
+    left: 17px;
 
-    width: 23px;
+    width: 29px;
     height: 3px;
 
     background-color: #000000;
   }
   .order-form__checkbox-label input[type="checkbox"]:checked + .order-form__checkbox-indicator::before {
     transform: rotate(40deg);
-    top: 30px;
-    left: 16px;
-    width: 8px;
+    top: 29px;
+    left: 8px;
+    width: 16px;
   }
   .order-form__label input[type="radio"] + .order-form__radio-indicator {
     position: absolute;
     top: 0;
     left: 0;
-    width: 52px;
-    height: 52px;
+    width: 50px;
+    height: 50px;
     border: 2px solid #444444;
     border-radius: 50%;
     &:hover {
@@ -210,11 +219,11 @@
   .order-form__label input[type="radio"]:checked + .order-form__radio-indicator::before {
     display: block;
     box-sizing: border-box;
-    top: 13px;
-    left: 13px;
+    top: 16px;
+    left: 14px;
     content: "";
     position: absolute;
-    border: 13px solid #62d1ba;
+    border: 11px solid #62d1ba;
     border-radius: 100%;
   }
 }
@@ -226,34 +235,42 @@
     margin: 0;
     flex-wrap: wrap;
     padding: 50px;
+    padding-bottom: 26px;
   }
   .order-form__checkbox-label{
     margin-right: 120px;
-    margin-bottom: 30px;
+    margin-bottom: 22px;
+    margin-top: 0;
     font-size: 19px;
   }
   .order-form__label--margin:first-child {
-    margin-right: 133px;
-  }
-  .order-form__label--margin:nth-child(2) {
     margin-right: 115px;
   }
+  .order-form__label--margin:nth-child(2) {
+    margin-right: 117px;
+  }
   .order-form__checkbox-label:nth-child(4) {
-    margin-right: 120px;
+    margin-right: 100px;
   }
   .order-form__checkbox-label:nth-child(5) {
     margin-right: 95px;
   }
   .order-form__item-headline {
-    margin-right: 71px;
-    margin-top: 20px;
-    padding-left: 61px;
+    margin-right: 67px;
+    margin-top: 24px;
+    padding-left: 64px;
     text-transform: uppercase;
+  }
+  .order-form__item:last-of-type .order-form__item-headline {
+        margin-top: 17px;
+    padding-left: 60px;
   }
   .order-form__fields {
     align-self: flex-end;
   }
-
+.order-form__item:nth-of-type(2) .order-form__item-headline {
+    margin-right: 71px;
+  }
   .order-form__checkbox  {
     display: flex;
     width: 824px;
@@ -263,6 +280,6 @@
   .order-form__radio {
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
+    margin-top: 5px;
   }
 }
