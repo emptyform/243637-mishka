@@ -18,6 +18,10 @@
     fill: #b2b2b2;
   }
 }
+.feedbacks-buttons__prev-icon,
+.feedbacks-buttons__next-icon {
+  width: 50px;
+}
 .feedbacks-buttons__next {
   box-sizing: border-box;
   width: 130px;
@@ -53,5 +57,9 @@
     height: 26px;
     border: none;
     margin: 0 19px;
+  }
+  .feedbacks-buttons__prev-icon,
+  .feedbacks-buttons__next-icon {
+    width: 100%;
   }
 }
